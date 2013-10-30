@@ -33,4 +33,15 @@ Highcharts.setOptions
   * 当为false时  - 起始点为 00:00 UTC，在坐标轴(axis)和消息提示(tooltip)时将会显示浏览者本地机器时间
 
 ## lang
+  即 Language对象，该对象为全局对象，不能在各个图表的初始化过程中赋值，而应该使用 Highcharts.setOptions 在任何图表初始化之前为其赋值。
+  ````c
+  Highcharts.setOptions({
+    lang: {
+      months:   ['Janvier','Fevrier','Mars','Avril','Mai','Juin',
+                 'Juillet','Aout','Septembre','Octobre','Novembre','Decembre'],
+      weekdays: ['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi']
+    }
+  });
+  ````
+  **contexButtonTitle**: String
   翻译中...
